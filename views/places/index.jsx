@@ -6,7 +6,7 @@ function index (data) {
       return (
         <div className="col-sm-6">
           <h2>{place.name}</h2>
-          <a href={'/places/${index}'}>
+          <a href={'/places/${place.id}'}>
             {place.name}
           </a>
           <p className='text-center'>
@@ -24,6 +24,10 @@ function index (data) {
           <main>
               <h1>Places to Rant About</h1>
               <div className="row">
+              <div className="form-group">
+  <label for="founded">Founded Year</label>
+  <input className="form-control" id="founded" name="founded" />
+</div>
               {placesFormatted}
               </div>
           </main>
