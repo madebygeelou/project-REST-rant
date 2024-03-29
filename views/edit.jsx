@@ -10,6 +10,14 @@ function edit_form (data) {
  <div className="row">
   <div className="form-group col-sm-6">
     <label htmlFor="name">Place Name</label>
+    <div className='"form-group col-sm-4'>
+        <label htmlFor="founded">Founded</label>
+        <input className="form-control"
+        id="founded"
+        name="founded"
+        value={data.place.founded}
+        />
+    </div>
     <input
     className="form-control"
     id="name"
